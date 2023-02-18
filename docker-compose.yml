@@ -3,6 +3,7 @@ services:
         image: pose:latest
         container_name: pose
         hostname: pose
+        tty: true
         build:
             context: .
             dockerfile: Dockerfile
