@@ -1,0 +1,16 @@
+services:
+    pose:
+        image: pose:latest
+        container_name: pose
+        hostname: pose
+        build:
+            context: .
+            dockerfile: Dockerfile
+        volumes:
+            - type: bind
+              source: ./images/
+              target: /home/pose/images
+              read_only: true
+            - /tmp/.X11-unix:/tmp/.X11-unix
+        environment:
+            - DISPLAY=${DISPLAY}
