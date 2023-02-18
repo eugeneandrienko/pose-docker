@@ -1,0 +1,17 @@
+There is a Docker image to run POSE (Palm OS Emulator).
+
+Dependencies:
+- docker
+- docker-compose
+- xhost
+
+* How to build image
+
+Run =docker-compose build=
+
+* How to run
+
+Execute =./run-pose.sh= script.
+
+Palm OS images should be placed under =./images/= catalog. It is binded to
+=/home/pose/images/= inside container.
