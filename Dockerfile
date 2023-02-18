@@ -22,7 +22,7 @@ RUN wget -c --no-check-certificate \
 RUN adduser -m pose && \
     mkdir /home/pose/images
 
-# PalmOS will be here:
+# PalmOS images will be here:
 VOLUME /home/pose/images
 
 USER pose
